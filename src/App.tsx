@@ -27,14 +27,9 @@
  } from "react-native/Libraries/NewAppScreen";
  
  const App: () => Node = () => {
-   const isDarkMode = useColorScheme() === "dark";
- 
-   const backgroundStyle = {
-     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-   };
  
    return (
-     <SafeAreaView style={backgroundStyle}>
+     <SafeAreaView>
        <Text>Hello</Text>
      </SafeAreaView>
    );
