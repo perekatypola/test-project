@@ -1,19 +1,18 @@
-import React from "react";
-import {View, Text} from 'react-native';
+import React from 'react';
+import HomeScreen from '../HomeScreen/HomeScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-const Stack = createStackNavigator();
-import HomeScreen from "../HomeScreen/HomeScreen";
-import type { FC } from "react";
 
-const Navigator:FC =() => {
-        return (
-            <NavigationContainer>
-              <Stack.Navigator>
-                <Stack.Screen name="Home" component={HomeScreen} />
-              </Stack.Navigator>
-            </NavigationContainer>
-          ); 
-}
+import type {FC} from 'react';
+
+const Stack = createStackNavigator();
+
+const Navigator: FC = () => (
+  <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
 
 export default Navigator;
