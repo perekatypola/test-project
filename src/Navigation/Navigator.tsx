@@ -1,16 +1,18 @@
 import React from 'react';
 import type {FC} from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../HomeScreen/HomeScreen';
+import CharacterScreen from '../Screens/CharacterScreen';
 
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const Navigator: FC = () => (
   <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Characters" component={CharacterScreen} />
+    </Tab.Navigator>
   </NavigationContainer>
 );
 

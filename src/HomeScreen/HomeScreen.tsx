@@ -1,12 +1,23 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Button} from 'react-native';
 import type {FC} from 'react';
+import {useDispatch} from 'react-redux';
 
-const HomeScreen: FC = () => (
-  // eslint-disable-next-line react-native/no-inline-styles
-  <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-    <Text>Home Screen</Text>
-  </View>
-);
+const HomeScreen: FC = () => {
+  const dispatch = useDispatch();
 
+  return (
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Button
+        title="Load characters"
+        onPress={() =>
+          dispatch({
+            type: 'Add characters',
+            payload: [{name: 'Morty'}, {name: 'Rick'}],
+          })
+        }
+      />
+    </View>
+  );
+};
 export default HomeScreen;
