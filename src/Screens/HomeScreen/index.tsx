@@ -1,14 +1,13 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
-import type {FC} from 'react';
+import {View, Button} from 'react-native';
 import {useDispatch} from 'react-redux';
-import styles from '../Styles/Stylesheet';
+import homeStyle from './Homestyle';
 
-const HomeScreen: FC = () => {
+const HomeScreen: React.FC = () => {
   const dispatch = useDispatch();
 
   return (
-    <View style={styles.homeView}>
+    <View style={homeStyle.view}>
       <Button
         title="Load characters"
         onPress={() =>
