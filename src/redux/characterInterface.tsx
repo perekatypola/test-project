@@ -1,5 +1,7 @@
 interface ICharacter {
-    name: string;
-    status: string;
-    species: string;
-  }
+  name: string;
+  status: string;
+  species: string;
+}
+
+export default ICharacter;

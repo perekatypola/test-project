@@ -1,5 +1,7 @@
+import ICharacter from './characterInterface';
+
 interface RootStore {
-  characters: [];
+  characters: ICharacter[];
   episodes: [];
   locations: [];
 }

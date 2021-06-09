@@ -1,11 +1,4 @@
-interface ICharacter {
-  name: string;
-  status: string;
-  species: string;
-}
-
-const initCharacterState = {list: []};
-
+const initCharacterState = {characters: []};
 
 export default function charactersReducer(state = initCharacterState, action) {
   switch (action.type) {
