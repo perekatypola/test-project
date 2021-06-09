@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const styles = StyleSheet({
+const styles = StyleSheet.create({
   homeView: {
     flex: 1,
     alignItems: 'center',
