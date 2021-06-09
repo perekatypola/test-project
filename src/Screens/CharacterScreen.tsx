@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
-import RootState from '../redux/store';
+import RootState, {store} from '../redux/store';
+import actions from '../redux/actions/actions';
 
 const CharacterScreen = () => {
   const selectCharacters = (state: RootState) => state.characters;
   const characters = useSelector(selectCharacters);
   console.log(characters);
+  useEffect(() => {
+    store.dispatch(actions.addCharactersThunk());
+  });
 
   return (
     <View>

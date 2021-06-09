@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const EpisodesScreen: React.FC = ({navigation}) => (
+const EpisodesScreen: React.FC = () => (
   <View>
-    <Text>Hello</Text>
+    <Text></Text>
   </View>
 );
 export default EpisodesScreen;
