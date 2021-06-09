@@ -2,7 +2,7 @@ import React from 'react';
 import type {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomeScreen from '../HomeScreen';
+import HomeScreen from '../Screens/HomeScreen';
 import CharacterScreen from '../Screens/CharacterScreen';
 
 const Tab = createBottomTabNavigator();
