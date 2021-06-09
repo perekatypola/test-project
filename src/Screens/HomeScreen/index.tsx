@@ -1,23 +1,15 @@
 import React from 'react';
 import {View, Button} from 'react-native';
-import {useDispatch} from 'react-redux';
 import homeStyle from './Homestyle';
 
-const HomeScreen: React.FC = () => {
-  const dispatch = useDispatch();
-
-  return (
-    <View style={homeStyle.view}>
-      <Button
-        title="Load characters"
-        onPress={() =>
-          dispatch({
-            type: 'Add characters',
-            payload: [{name: 'Morty'}, {name: 'Rick'}],
-          })
-        }
-      />
-    </View>
-  );
-};
+const HomeScreen: React.FC = ({navigation}) => (
+  <View style={homeStyle.view}>
+    <Button
+      title="Discover Rick and Morty"
+      onPress={() => {
+        navigation.navigate('Rick and Morty');
+      }}
+    />
+  </View>
+);
 export default HomeScreen;

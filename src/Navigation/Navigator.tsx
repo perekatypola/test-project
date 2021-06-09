@@ -2,18 +2,23 @@ import React from 'react';
 import type {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../Screens/HomeScreen';
-import CharacterScreen from '../Screens/CharacterScreen';
-import {HOME, CHARACTERS} from '../Screens/constants';
+import TabsNavigation from './TabsNavigation';
+import {HOME} from '../Screens/constants';
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 const Navigator: FC = () => (
   <NavigationContainer>
-    <Tab.Navigator>
-      <Tab.Screen name={HOME} component={HomeScreen} />
-      <Tab.Screen name={CHARACTERS} component={CharacterScreen} />
-    </Tab.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen
+        name={HOME}
+        component={HomeScreen}
+        options={{title: 'Home'}}
+      />
+      <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
+    </Stack.Navigator>
   </NavigationContainer>
 );
 
