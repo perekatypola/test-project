@@ -18,7 +18,7 @@ function errorOccured(error) {
 const actions = {
   addCharactersThunk: () => async dispatch => {
     try {
-      const characters = await axios.get('https://rickandmortyapi.com/api/character');
+      const characters = await axios.get('character');
       await dispatch(getCharacters(characters.results));
     } catch (error) {
       console.log(error);

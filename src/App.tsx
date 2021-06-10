@@ -3,9 +3,11 @@ import type {FC} from 'react';
 import {Provider} from 'react-redux';
 import axios from 'axios';
 import Navigator from './containers/Navigation/MainNavigator/Navigator';
+import api from './axios/axios';
+
 import {store} from './redux/store';
 
-axios.interceptors.response.use(
+api.interceptors.response.use(
   response => response.data,
   error => Promise.reject(error),
 );
