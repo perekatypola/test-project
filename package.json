@@ -54,8 +54,7 @@
   "lint-staged": {
     "**/*": [
       "prettier --write --ignore-unknown",
-      "git add",
-      "eslint src/**/*.*"
+      "git add"
     ]
   }
 }

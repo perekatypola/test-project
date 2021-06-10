@@ -1,9 +1,8 @@
 import React from 'react';
-import type {FC} from 'react';
 import {SafeAreaView} from 'react-native';
 import Navigator from './Navigation/Navigator';
 
-const App: FC = () => (
+const App: React.FC = () => (
   <SafeAreaView>
     <Navigator />
   </SafeAreaView>
