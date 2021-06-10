@@ -54,7 +54,8 @@
   "lint-staged": {
     "**/*": [
       "prettier --write --ignore-unknown",
-      "git add"
+      "git add",
+      "npm run lint"
     ]
   }
 }
