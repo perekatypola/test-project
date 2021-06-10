@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
-import RootState, {store} from '../redux/store';
-import actions from '../redux/actions/actions';
-import ErrorBoundary from '../ErrorProccessing/ErrorBoundary';
+import RootState, {store} from '../../../redux/store';
+import actions from '../../../redux/actions/actions';
+import ErrorBoundary from '../../../ErrorBoundary/ErrorBoundary';
 
 const selectCharacters = (state: RootState) => state.characters;
 

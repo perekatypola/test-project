@@ -2,7 +2,7 @@ import React from 'react';
 import type {FC} from 'react';
 import {Provider} from 'react-redux';
 import axios from 'axios';
-import Navigator from './Navigation/Navigator';
+import Navigator from './containers/Navigation/MainNavigator/Navigator';
 import {store} from './redux/store';
 
 axios.interceptors.response.use(

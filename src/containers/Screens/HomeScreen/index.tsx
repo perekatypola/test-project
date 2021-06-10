@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Button} from 'react-native';
-import homeStyle from './Homestyle';
+import homeStyle from './styles';
 
 const HomeScreen: React.FC = ({navigation}) => (
   <View style={homeStyle.view}>
