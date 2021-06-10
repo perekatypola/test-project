@@ -1,9 +1,9 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import CharacterScreen from '../../Screens/CharacterScreen/CharacterScreen';
-import LocationsScreen from '../../Screens/LocationsScreen';
-import EpisodesScreen from '../../Screens/EpisodesScreen';
-import screens from '../../../сonstants/ScreenConstants';
+import CharacterScreen from '../../Screens/Characters';
+import LocationsScreen from '../../Screens/Locations';
+import EpisodesScreen from '../../Screens/Episodes';
+import screens from '../../../сonstants/screens';
 
 const Tab = createBottomTabNavigator();
 

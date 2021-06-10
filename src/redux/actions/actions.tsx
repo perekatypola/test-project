@@ -1,15 +1,16 @@
 import axios from 'axios';
+import ACTIONS from '../../сonstants/actions';
 
 function getCharacters(characters) {
   return {
-    type: 'Add characters',
+    type: ACTIONS.ADDCHARACTERS,
     characters,
   };
 }
 
 function errorOccured(error) {
   return {
-    type: 'Not successful reciever',
+    type: ACTIONS.FAILURE,
     error,
   };
 }
