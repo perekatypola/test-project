@@ -1,35 +1,29 @@
-import React, { useEffect } from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from 'react';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CharacterScreen from '../Screens/CharacterScreen';
 import LocationsScreen from '../Screens/LocationsScreen';
 import EpisodesScreen from '../Screens/EpisodesScreen';
-import { CHARACTERS, LOCATIONS } from '../Screens/constants';
-import { store } from '../redux/store';
-import actions from '../redux/actions/actions';
+import {CHARACTERS, LOCATIONS} from '../Screens/constants';
 
 const Tab = createBottomTabNavigator();
 
 const TabsNavigation: React.FC = () => {
-  useEffect(() => {
-    store.dispatch(actions.addCharactersThunk);
-  });
-
   return (
     <Tab.Navigator>
       <Tab.Screen
         name={CHARACTERS}
         component={CharacterScreen}
-        options={{ title: 'Characters' }}
+        options={{title: 'Characters'}}
       />
       <Tab.Screen
         name={LOCATIONS}
         component={LocationsScreen}
-        options={{ title: 'Locations' }}
+        options={{title: 'Locations'}}
       />
       <Tab.Screen
         name="Episodes"
         component={EpisodesScreen}
-        options={{ title: 'Episodes' }}
+        options={{title: 'Episodes'}}
       />
     </Tab.Navigator>
   );

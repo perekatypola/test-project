@@ -7,12 +7,22 @@ function getCharacters(characters) {
   };
 }
 
+function errorOccured(error) {
+  return {
+    type: 'Not successful reciever',
+    error,
+  };
+}
+
 const actions = {
-  addCharactersThunk: () => dispatch =>
-    axios
-      .get('/api/characters')
-      .then(res => res.data)
-      .then(characters => dispatch(getCharacters(characters))),
+  addCharactersThunk: () => async dispatch => {
+    try {
+      const characters = await axios.get('https://rickandmortyapi.com/api/character');
+      await dispatch(getCharacters(characters.results));
+    } catch (error) {
+      console.log(error);
+    }
+  },
 };
 
 export default actions;
