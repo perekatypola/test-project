@@ -1,6 +1,6 @@
-const screens = {
+const SCREENS = {
   HOME: 'Home',
   CHARACTERS: 'Characters',
 };
 
-export default screens;
+export default SCREENS;
