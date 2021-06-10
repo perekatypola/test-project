@@ -1,18 +1,15 @@
 import React from 'react';
-import type {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomeScreen from '../Screens/HomeScreen';
-import CharacterScreen from '../Screens/CharacterScreen';
-import {HOME, CHARACTERS} from '../Screens/constants';
+import Home from '../Screens/Home';
+import screens from '../Constants/ScreenConstants';
 
 const Tab = createBottomTabNavigator();
 
-const Navigator: FC = () => (
+const Navigator: React.FC = () => (
   <NavigationContainer>
     <Tab.Navigator>
-      <Tab.Screen name={HOME} component={HomeScreen} />
-      <Tab.Screen name={CHARACTERS} component={CharacterScreen} />
+      <Tab.Screen name={screens.HOME} component={Home} />
     </Tab.Navigator>
   </NavigationContainer>
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Button} from 'react-native';
 import {useDispatch} from 'react-redux';
-import homeStyle from './Homestyle';
+import homeStyle from './styles';
 
 const HomeScreen: React.FC = () => {
   const dispatch = useDispatch();
