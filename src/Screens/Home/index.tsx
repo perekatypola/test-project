@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import stylesForHome from './styles';
+import styles from './styles';
 
-const HomeScreen: React.FC = () => <View style={stylesForHome.view} />;
-export default HomeScreen;
+const Home: React.FC = () => <View style={styles.view} />;
+export default Home;
