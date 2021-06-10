@@ -6,12 +6,10 @@ import actions from '../redux/actions/actions';
 
 const CharacterScreen = () => {
   const selectCharacters = (state: RootState) => state.characters;
-  const characters = useSelector(selectCharacters);
+  const {characters} = useSelector(selectCharacters);
   useEffect(() => {
     store.dispatch(actions.addCharactersThunk());
   }, []);
-  console.log(characters.characters);
-  console.log(characters.characters[0]);
   return (
     <View>
       <FlatList

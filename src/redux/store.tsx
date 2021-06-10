@@ -4,9 +4,9 @@ import ICharacter from './characterInterface';
 import rootReducer from './reducers/reducer';
 
 interface RootStore {
-  characters: ICharacter[];
-  episodes: [];
-  locations: [];
+  characters: {
+    characters: ICharacter[];
+  };
 }
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));
