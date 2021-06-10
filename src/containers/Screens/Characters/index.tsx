@@ -7,7 +7,7 @@ import ErrorBoundary from '../../../components/ErrorBoundary';
 
 const selectCharacters = (state: RootState) => state.characters;
 
-const CharacterScreen = () => {
+const Characters = () => {
   const {characters} = useSelector(selectCharacters);
 
   useEffect(() => {
@@ -27,4 +27,4 @@ const CharacterScreen = () => {
   );
 };
 
-export default CharacterScreen;
+export default Characters;

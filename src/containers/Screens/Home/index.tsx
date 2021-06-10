@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Button} from 'react-native';
 import homeStyle from './styles';
 
-const HomeScreen: React.FC = ({navigation}) => (
+const Home: React.FC = ({navigation}) => (
   <View style={homeStyle.view}>
     <Button
       title="Discover Rick and Morty"
@@ -12,4 +12,4 @@ const HomeScreen: React.FC = ({navigation}) => (
     />
   </View>
 );
-export default HomeScreen;
+export default Home;
