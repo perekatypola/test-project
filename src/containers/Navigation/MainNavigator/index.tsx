@@ -1,10 +1,9 @@
-import React from 'react';
-import type {FC} from 'react';
+import React, {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import Home from '../../Screens/Home';
-import TabsNavigation from '../TabsNavigator/Tabs';
-import screens from '../../../сonstants/screens';
+import Home from 'containers/Screens/Home';
+import TabsNavigation from '../TabsNavigator';
+import screens from 'сonstants/screens';
 
 const Stack = createStackNavigator();
 

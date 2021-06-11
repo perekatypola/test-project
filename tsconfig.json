@@ -1,25 +1,31 @@
 {
-    "compilerOptions": {
-      "allowJs": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "isolatedModules": true,
-      "jsx": "react",
-      "lib": ["es6"],
-      "moduleResolution": "node",
-      "noEmit": true,
-      "module": "commonjs",
-      "strict": true,
-      "target": "esnext",
-      "baseUrl": "./",
-        "paths": {
-        "*": ["src/*"] ,
-    },
-    },
-    "exclude": [
-      "node_modules",
-      "babel.config.js",
-      "metro.config.js",
-      "jest.config.js"
-    ]
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["es6"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "module": "commonjs",
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": "./",
+      "paths": {
+      "*": ["src/*"] ,
+      "constants" : ["./src/constants"],
+      "Screens" : ["./src/containers"],
+      "Navigation" : ["./src/containers/Navigation"],
+      "redux" : ["./src/redux"],
+      "components" : ["./src/components"],
+      "interfaces" : ["./src/interfaces"]
+  },
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
 }

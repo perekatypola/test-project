@@ -1,14 +1,15 @@
 import axios from 'axios';
-import ACTIONS from '../../сonstants/actions';
+import CharactersResponse from 'interfaces/apiCharactersResponse';
+import ACTIONS from 'сonstants/actions';
 
-function getCharacters(characters) {
+function getCharacters(characters: any) {
   return {
     type: ACTIONS.ADDCHARACTERS,
     characters,
   };
 }
 
-function errorOccured(error) {
+function errorOccured(error: any) {
   return {
     type: ACTIONS.FAILURE,
     error,
@@ -18,7 +19,7 @@ function errorOccured(error) {
 const actions = {
   addCharactersThunk: () => async dispatch => {
     try {
-      const characters = await axios.get('character');
+      const characters: CharactersResponse = await axios.get('character');
       await dispatch(getCharacters(characters.results));
     } catch (error) {
       console.log(error);

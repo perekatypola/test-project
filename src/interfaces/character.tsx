@@ -1,7 +1,7 @@
-interface ICharacter {
+interface Character {
   name: string;
   status: string;
   species: string;
 }
 
-export default ICharacter;
+export default Character;

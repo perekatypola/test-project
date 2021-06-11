@@ -1,11 +1,11 @@
 import {StyleSheet} from 'react-native';
 
-const homeStyle = StyleSheet.create({
-  view: {
+const styles = StyleSheet.create({
+  container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
 
-export default homeStyle;
+export default styles;

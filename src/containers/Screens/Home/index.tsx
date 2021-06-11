@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Button} from 'react-native';
-import homeStyle from './styles';
+import styles from './styles';
 
 const Home: React.FC = ({navigation}) => (
-  <View style={homeStyle.view}>
+  <View style={styles.container}>
     <Button
       title="Discover Rick and Morty"
       onPress={() => {

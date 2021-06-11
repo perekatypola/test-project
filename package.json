@@ -15,7 +15,7 @@
     "@react-navigation/native": "5.9.4",
     "@react-navigation/stack": "5.14.5",
     "@reduxjs/toolkit": "1.6.0",
-    "axios": "0.21.1",
+    "axios": "^0.21.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
     "react-native-gesture-handler": "1.10.3",
@@ -24,7 +24,7 @@
     "react-native-screens": "3.3.0",
     "react-redux": "7.2.4",
     "redux": "4.1.0",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
@@ -37,10 +37,15 @@
     "@typescript-eslint/eslint-plugin": "4.26.0",
     "@typescript-eslint/parser": "4.26.0",
     "babel-jest": "26.6.3",
+    "babel-plugin-module-resolver": "4.1.0",
     "eslint": "7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-babel-module": "5.3.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react-hooks": "4.2.0",
     "husky": "6.0.0",
     "jest": "26.6.3",
@@ -57,7 +62,7 @@
     "**/*": [
       "prettier --write --ignore-unknown",
       "git add",
-      "eslint src/**/*.*"
+      "npm run lint"
     ]
   }
 }

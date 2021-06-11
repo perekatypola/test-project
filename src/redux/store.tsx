@@ -1,11 +1,11 @@
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
-import ICharacter from './characterInterface';
+import Character from '../interfaces/character';
 import rootReducer from './reducers/reducer';
 
 interface RootStore {
   characters: {
-    characters: ICharacter[];
+    characters: Character[];
   };
 }
 
