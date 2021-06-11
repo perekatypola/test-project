@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import type {FC} from 'react';
 import {Provider} from 'react-redux';
 import Navigator from './containers/Navigation/MainNavigator';
@@ -14,13 +13,6 @@ api.interceptors.response.use(
 
 const App: FC = () => (
   <Provider store={store}>
-=======
-import {SafeAreaView} from 'react-native';
-import Navigator from './Navigation';
-
-const App: React.FC = () => (
-  <SafeAreaView>
->>>>>>> config
     <Navigator />
   </Provider>
 );
