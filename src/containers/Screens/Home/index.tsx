@@ -1,6 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {View, Button, Text} from 'react-native';
+import {View, Button, Text, SafeAreaView} from 'react-native';
 import {useTranslation} from 'react-i18next';
 import i18n from '../../../Localization';
 import styles from './styles';
@@ -10,22 +10,39 @@ const Home: React.FC = () => {
   const {t} = useTranslation();
 
   return (
-    <View style={styles.container}>
-      <Button
-        title="rus"
-        onPress={() => {
-          i18n.changeLanguage('ru');
-        }}>
-        RU
-      </Button>
-      <Button
-        title="Rick and Morty"
-        onPress={() => {
-          navigation.navigate('Rick and Morty');
-        }}
-      />
-      <Text>{t('description.homeName')}</Text>
-    </View>
+    <SafeAreaView>
+      <View style={styles.mainContainer}>
+        <View style={styles.buttonContainer}>
+          <View style={styles.button}>
+            <Button
+              title="rus"
+              onPress={() => {
+                i18n.changeLanguage('ru');
+              }}
+            />
+          </View>
+          <View style={styles.button}>
+            <Button
+              title="en"
+              onPress={() => {
+                i18n.changeLanguage('en');
+              }}
+            />
+          </View>
+        </View>
+        <View style={styles.text}>
+          <Text>{t('description.homeName')}</Text>
+        </View>
+        <View style={styles.container}>
+          <Button
+            title="Rick and Morty"
+            onPress={() => {
+              navigation.navigate('Rick and Morty');
+            }}
+          />
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 export default Home;
