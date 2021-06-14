@@ -1,26 +1,26 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Characters from 'containers/Screens/Characters';
-import LocationsScreen from 'containers/Screens/Locations';
-import Episodes from 'containers/Screens/Episodes';
-import screens from 'сonstants/screens';
+import Characters from 'Screens/Characters';
+import Locations from 'Screens/Locations';
+import Episodes from 'Screens/Episodes';
+import SCREENS from 'Constants/screens';
 
 const Tab = createBottomTabNavigator();
 
 const TabsNavigation: React.FC = () => (
   <Tab.Navigator>
     <Tab.Screen
-      name={screens.CHARACTERS}
+      name={SCREENS.CHARACTERS}
       component={Characters}
       options={{title: 'Characters'}}
     />
     <Tab.Screen
-      name={screens.LOCATIONS}
-      component={LocationsScreen}
+      name={SCREENS.LOCATIONS}
+      component={Locations}
       options={{title: 'Locations'}}
     />
     <Tab.Screen
-      name={screens.EPISODES}
+      name={SCREENS.EPISODES}
       component={Episodes}
       options={{title: 'Episodes'}}
     />

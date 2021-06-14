@@ -1,6 +1,6 @@
 import axios from 'axios';
-import CharactersResponse from 'interfaces/apiCharactersResponse';
-import ACTIONS from 'сonstants/actions';
+import {CharactersResponse} from 'Interfaces/responses';
+import ACTIONS from 'Constants/actions';
 
 function getCharacters(characters: any) {
   return {

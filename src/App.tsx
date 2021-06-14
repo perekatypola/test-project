@@ -1,10 +1,10 @@
 import React from 'react';
 import type {FC} from 'react';
 import {Provider} from 'react-redux';
-import Navigator from './containers/Navigation/MainNavigator';
-import api from './axios/axios';
+import Navigator from 'Navigation/MainNavigator';
+import api from 'Configs/api';
 
-import {store} from './redux/store';
+import {store} from './Store';
 
 api.interceptors.response.use(
   response => response.data,
