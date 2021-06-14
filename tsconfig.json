@@ -21,7 +21,8 @@
       "Interfaces/*": ["./src/Interfaces/*"],
       "Configs/*": ["./src/Configs/*"]
     },
-    "typeRoots": ["./src/types"]
+    "typeRoots": ["./src/types"],
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
