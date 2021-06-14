@@ -1,6 +1,6 @@
-import axios from 'axios';
 import {CharactersResponse} from 'Interfaces/responses';
 import ACTIONS from 'Constants/actions';
+import api from 'Configs/api';
 
 function getCharacters(characters: any) {
   return {
@@ -19,7 +19,7 @@ function errorOccured(error: any) {
 const actions = {
   addCharactersThunk: () => async dispatch => {
     try {
-      const characters: CharactersResponse = await axios.get('character');
+      const characters: CharactersResponse = await api.get('character');
       await dispatch(getCharacters(characters.results));
     } catch (error) {
       console.log(error);

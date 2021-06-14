@@ -1,7 +1,8 @@
 import axios from 'axios';
+import {API_URL} from 'react-native-dotenv';
 
 const api = axios.create({
-  baseURL: 'https://rickandmortyapi.com/api/',
+  baseURL: API_URL,
   responseType: 'json',
 });
 
