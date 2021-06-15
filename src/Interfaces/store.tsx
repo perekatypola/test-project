@@ -8,6 +8,6 @@ export interface CharacterState {
   characters: Character[];
 }
 
-export interface RootStore {
+export interface RootState {
   characters: CharacterState;
 }
