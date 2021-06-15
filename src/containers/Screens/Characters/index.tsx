@@ -4,7 +4,7 @@ import {useSelector} from 'react-redux';
 import store from 'Store';
 import {RootState} from 'Interfaces/store';
 import {createSelector} from 'reselect';
-import {addCharactersThunk} from 'Store/Characters/async';
+import {addCharactersThunk} from 'Store/Characters/asyncActions';
 
 const selectCharacters = createSelector(
   (state: RootState) => state.characters,

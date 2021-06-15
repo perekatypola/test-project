@@ -1,6 +1,6 @@
 import {CharactersResponse} from 'Interfaces/responses';
 import api from 'Configs/api';
-import {getCharacters} from './sync';
+import {getCharacters} from './syncActions';
 
 export const addCharactersThunk = () => async dispatch => {
   try {

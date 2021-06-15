@@ -1,3 +1,4 @@
+import {CHARACTER_ACTIONS} from 'Constants/actions';
 import {CharacterState} from 'Interfaces/store';
 
 const initCharacterState = {};
@@ -7,10 +8,10 @@ export default function charactersReducer(
   action,
 ) {
   switch (action.type) {
-    case 'Add characters': {
+    case CHARACTER_ACTIONS.ADD_CHARACTERS: {
       return {...state, characters: action.characters};
     }
-    case 'Not successful recieving':
+    case CHARACTER_ACTIONS.FAILURE:
       return state;
     default:
       return state;

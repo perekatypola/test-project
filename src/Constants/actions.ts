@@ -5,5 +5,5 @@ export const CHARACTER_ACTIONS = {
 };
 
 export const EPISODE_ACTIONS = {
-  ISLOADING: 'Load',
+  IS_LOADING: 'Is loading',
 };
