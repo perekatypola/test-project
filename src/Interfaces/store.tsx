@@ -7,3 +7,7 @@ export interface Character {
 export interface CharacterState {
   characters: Character[];
 }
+
+export interface RootStore {
+  characters: CharacterState;
+}

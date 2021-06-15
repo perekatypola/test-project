@@ -1,12 +1,7 @@
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
-import {CharacterState} from 'Interfaces/store';
 import rootReducer from './rootReducer';
 
-interface RootStore {
-  characters: CharacterState;
-}
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
-export const store = createStore(rootReducer, applyMiddleware(thunk));
-
-export default RootStore;
+export default store;

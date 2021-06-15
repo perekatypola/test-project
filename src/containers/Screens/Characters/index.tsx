@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
-import RootState, {store} from 'Store';
+import store from 'Store';
+import {RootStore} from 'Interfaces/store';
 import {createSelector} from 'reselect';
 import {addCharactersThunk} from 'Store/Characters/actions';
 
