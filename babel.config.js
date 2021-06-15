@@ -12,6 +12,7 @@ module.exports = {
           Store: './src/Store',
           Interfaces: './src/Interfaces',
           Configs: './src/Configs',
+          Localization: './src/Localization',
         },
       },
     ],

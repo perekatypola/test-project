@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from 'Screens/Home';
+import Languages from 'Screens/Languages';
 import SCREENS from 'Constants/screens';
 import TabsNavigation from './TabsNavigator';
 
@@ -16,6 +17,7 @@ const Navigator: FC = () => (
         options={{title: 'Home'}}
       />
       <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
+      <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />
     </Stack.Navigator>
   </NavigationContainer>
 );

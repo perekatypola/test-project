@@ -19,7 +19,8 @@
       "Navigation/*": ["src/Containers/Navigation/*"],
       "Store/*": ["./src/Store/*"],
       "Interfaces/*": ["./src/Interfaces/*"],
-      "Configs/*": ["./src/Configs/*"]
+      "Configs/*": ["./src/Configs/*"],
+      "Localization/*": ["./src/Localization/*"]
     },
     "typeRoots": ["./src/types"],
     "resolveJsonModule": true

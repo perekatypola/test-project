@@ -1,5 +1,7 @@
 {
     "description": {
-        "homeName": "Discover Rick and Morty"
+        "homeName": "It is english now",
+        "navToLang": "Change language",
+        "navToTabs": "Discover Rick and Morty"
     }
 }
