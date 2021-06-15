@@ -15,7 +15,7 @@ const Navigator: FC = () => (
         component={Home}
         options={{title: 'Home'}}
       />
-      <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
+      <Stack.Screen name={SCREENS.MAIN} component={TabsNavigation} />
     </Stack.Navigator>
   </NavigationContainer>
 );

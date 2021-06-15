@@ -2,15 +2,19 @@ import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
 import RootState, {store} from 'Store';
-import actions from 'Store/Characters/actions';
+import {createSelector} from 'reselect';
+import {addCharactersThunk} from 'Store/Characters/actions';
 
-const selectCharacters = (state: RootState) => state.characters;
+const selectCharacters = createSelector(
+  (state: RootState) => state.characters,
+  characters => characters,
+);
 
 const Characters = () => {
   const {characters} = useSelector(selectCharacters);
 
   useEffect(() => {
-    store.dispatch(actions.addCharactersThunk());
+    store.dispatch(addCharactersThunk());
   }, []);
 
   return (

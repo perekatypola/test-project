@@ -1,6 +1,11 @@
-const initCharacterState = {characters: []};
+import {CharacterState} from 'Interfaces/store';
 
-export default function charactersReducer(state = initCharacterState, action) {
+const initCharacterState = {};
+
+export default function charactersReducer(
+  state: CharacterState = initCharacterState,
+  action,
+) {
   switch (action.type) {
     case 'Add characters': {
       console.log(action);

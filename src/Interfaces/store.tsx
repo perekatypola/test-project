@@ -3,3 +3,7 @@ export interface Character {
   status: string;
   species: string;
 }
+
+export interface CharacterState {
+  characters: Character[];
+}

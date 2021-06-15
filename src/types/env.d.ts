@@ -1,3 +1,4 @@
 declare module 'react-native-dotenv' {
-  export const API_URL: string;
+  const API_URL: string;
+  export default API_URL;
 }

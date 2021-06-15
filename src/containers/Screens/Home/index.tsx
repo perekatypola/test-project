@@ -1,6 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, Button} from 'react-native';
+import SCREENS from 'Constants/screens';
 import styles from './styles';
 
 const Home: React.FC = () => {
@@ -11,7 +12,7 @@ const Home: React.FC = () => {
       <Button
         title="Discover Rick and Morty"
         onPress={() => {
-          navigation.navigate('Rick and Morty');
+          navigation.navigate(SCREENS.MAIN);
         }}
       />
     </View>
