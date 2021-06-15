@@ -1,7 +1,9 @@
-const ACTIONS = {
+export const CHARACTER_ACTIONS = {
   ISLOADING: 'Is loading',
   ADDCHARACTERS: 'Add characters',
   FAILURE: 'Is error',
 };
 
-export default ACTIONS;
+export const EPISODE_ACTIONS = {
+  ISLOADING: 'Load',
+};

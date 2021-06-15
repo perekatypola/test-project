@@ -1,7 +1,7 @@
 const SCREENS = {
   HOME: 'Home',
   CHARACTERS: 'Characters',
-  TABS: 'TabsNavigator',
+  TABS: 'Tabs',
   LOCATIONS: 'Lovations',
   EPISODES: 'Episodes',
   MAIN: 'Rick and Morty',

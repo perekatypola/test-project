@@ -1,4 +1,4 @@
 export interface CharactersResponse {
-  info: any;
-  results: any;
+  info: unknown;
+  results: unknown;
 }
