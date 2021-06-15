@@ -8,7 +8,6 @@ export default function charactersReducer(
 ) {
   switch (action.type) {
     case 'Add characters': {
-      console.log(action);
       return {...state, characters: action.characters};
     }
     case 'Not successful recieving':

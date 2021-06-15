@@ -2,7 +2,7 @@ import {CHARACTER_ACTIONS} from 'Constants/actions';
 
 export function getCharacters(characters: any) {
   return {
-    type: CHARACTER_ACTIONS.ADDCHARACTERS,
+    type: CHARACTER_ACTIONS.ADD_CHARACTERS,
     characters,
   };
 }
