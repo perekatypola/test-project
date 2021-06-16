@@ -1,4 +1,4 @@
-import CHARACTER_ACTIONS from './actions';
+import CHARACTER_ACTIONS from './constants';
 
 export function fetchCharacters(characters: any) {
   return {
@@ -17,6 +17,5 @@ export function isError(error: any) {
 export function isFetching() {
   return {
     type: CHARACTER_ACTIONS.FETCH_CHARACTERS_REQUEST,
-    payload: 'true',
   };
 }

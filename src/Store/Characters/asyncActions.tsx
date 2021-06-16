@@ -1,8 +1,7 @@
 import {CharactersResponse} from 'Interfaces/responses';
 import api from 'Configs/api';
-import {ToastActionsCreators} from "react-native-redux-toast";
-import {fetchCharacters, isFetching, isError} from './syncActions';
-
+import Toast from 'react-native-root-toast';
+import {fetchCharacters, isFetching, isError} from './actions';
 
 export const addCharactersThunk = () => async dispatch => {
   try {
@@ -10,7 +9,15 @@ export const addCharactersThunk = () => async dispatch => {
     const characters: CharactersResponse = await api.get('character');
     await dispatch(fetchCharacters(characters.results));
   } catch (error) {
-    dispatch(ToastActionsCreators.displayError(error));
+    let toast = Toast.show('This is a message', {
+      duration: Toast.durations.LONG,
+      position: Toast.positions.BOTTOM,
+      shadow: true,
+      animation: true,
+      hideOnPress: true,
+      delay: 0,
+    });
+    dispatch(isError(error));
   }
 };
 

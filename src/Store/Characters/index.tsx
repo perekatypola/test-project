@@ -1,10 +1,13 @@
 import {CharacterState} from 'Interfaces/store';
-import CHARACTER_ACTIONS from './actions';
+import CHARACTER_ACTIONS from './constants';
 
-const initCharacterState = {};
+const initialState = {
+  characters: [],
+  isFetching: false,
+};
 
 export default function charactersReducer(
-  state: CharacterState = initCharacterState,
+  state: CharacterState = initialState,
   action,
 ) {
   switch (action.type) {
@@ -15,7 +18,7 @@ export default function charactersReducer(
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_REQUEST:
       return {...state, isFetching: true};
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_FAILURE:
-      return state;
+      return {...state, isFetching: false};
     default:
       return state;
   }
