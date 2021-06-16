@@ -1,14 +1,14 @@
 import {CharactersResponse} from 'Interfaces/responses';
 import api from 'Configs/api';
-import {fetchCharacters} from './syncActions';
+import {fetchCharacters, isFetching, isError} from './syncActions';
 
 export const addCharactersThunk = () => async dispatch => {
   try {
+    dispatch(isFetching());
     const characters: CharactersResponse = await api.get('character');
-    console.log(characters);
     await dispatch(fetchCharacters(characters.results));
   } catch (error) {
-    console.log(error);
+    dispatch(isError(error));
   }
 };
 

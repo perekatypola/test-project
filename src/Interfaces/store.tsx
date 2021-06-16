@@ -6,6 +6,7 @@ export interface Character {
 
 export interface CharacterState {
   characters: Character[];
+  isFetching: boolean;
 }
 
 export interface RootState {
