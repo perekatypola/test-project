@@ -9,7 +9,7 @@ export const addCharactersThunk = () => async dispatch => {
     const characters: CharactersResponse = await api.get('character');
     await dispatch(fetchCharacters(characters.results));
   } catch (error) {
-    let toast = Toast.show('This is a message', {
+    const toast = Toast.show('This is a message', {
       duration: Toast.durations.LONG,
       position: Toast.positions.BOTTOM,
       shadow: true,
@@ -17,7 +17,7 @@ export const addCharactersThunk = () => async dispatch => {
       hideOnPress: true,
       delay: 0,
     });
-    dispatch(isError(error));
+    dispatch(isError());
   }
 };
 

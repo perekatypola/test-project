@@ -7,10 +7,9 @@ export function fetchCharacters(characters: any) {
   };
 }
 
-export function isError(error: any) {
+export function isError() {
   return {
     type: CHARACTER_ACTIONS.FETCH_CHARACTERS_FAILURE,
-    error,
   };
 }
 
