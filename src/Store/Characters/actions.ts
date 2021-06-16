@@ -1,6 +1,6 @@
 import CHARACTER_ACTIONS from './constants';
 
-export const fetchCharactersSuccess = (characters: any) =>  ({
+export const fetchCharactersSuccess = (characters: any) => ({
   type: CHARACTER_ACTIONS.FETCH_CHARACTERS_SUCCESS,
   characters,
 });

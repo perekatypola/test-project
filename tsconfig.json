@@ -14,12 +14,12 @@
     "baseUrl": "./",
     "paths": {
       "*": ["src/*"],
-      "Constants/*": ["./src/Constants/*"],
-      "Screens/*": ["src/Containers/Screens/*"],
-      "Navigation/*": ["src/Containers/Navigation/*"],
-      "Store/*": ["./src/Store/*"],
-      "Interfaces/*": ["./src/Interfaces/*"],
-      "Configs/*": ["./src/Configs/*"]
+      "@app/constants/*": ["src/сonstants/*"],
+      "screens/*": ["src/сontainers/screens/*"],
+      "navigation/*": ["src/сontainers/navigation/*"],
+      "store/*": ["src/store/*"],
+      "interfaces/*": ["src/interfaces/*"],
+      "configs/*": ["src/сonfigs/*"]
     },
     "typeRoots": ["./src/types"]
   },

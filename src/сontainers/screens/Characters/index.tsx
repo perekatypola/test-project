@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
-import store from 'Store';
-import {RootState} from 'Interfaces/store';
+import store from 'store';
+import {RootState} from 'interfaces/store';
 import {createSelector} from 'reselect';
-import {fetchCharactersThunk} from 'Store/Characters/asyncActions';
+import {fetchCharactersThunk} from 'store/characters/asyncActions';
 
 const selectCharacters = createSelector(
   (state: RootState) => state.characters,

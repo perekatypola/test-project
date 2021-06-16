@@ -6,12 +6,12 @@ module.exports = {
       {
         root: ['./src'],
         alias: {
-          Constants: './src/Constants',
-          Screens: './src/Containers/Screens',
-          Navigation: './src/Containers/Navigation',
-          Store: './src/Store',
-          Interfaces: './src/Interfaces',
-          Configs: './src/Configs',
+          '@app/constants': './src/constants',
+          screens: './src/containers/screens',
+          navigation: './src/containers/navigation',
+          store: './src/store',
+          interfaces: './src/interfaces',
+          configs: './src/configs',
         },
       },
     ],

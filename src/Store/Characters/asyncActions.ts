@@ -1,7 +1,7 @@
-import {CharactersResponse} from 'Interfaces/responses';
-import api from 'Configs/api';
+import {CharactersResponse} from 'interfaces/responses';
+import api from 'сonfigs/api';
 import Toast from 'react-native-root-toast';
-import {URLS} from 'Constants';
+import {URLS} from 'сonstants';
 import {
   fetchCharactersSuccess,
   fetchCharactersRequest,

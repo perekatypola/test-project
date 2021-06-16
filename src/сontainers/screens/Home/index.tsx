@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, Button} from 'react-native';
-import {SCREENS} from 'Constants';
+import {SCREENS} from 'сonstants';
 import styles from './styles';
 
 const Home: React.FC = () => {
