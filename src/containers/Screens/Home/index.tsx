@@ -11,9 +11,7 @@ const Home: React.FC = () => {
     <View style={styles.container}>
       <Button
         title="Discover Rick and Morty"
-        onPress={() => {
-          navigation.navigate(SCREENS.MAIN);
-        }}
+        onPress={() => navigation.navigate(SCREENS.MAIN)}
       />
     </View>
   );
