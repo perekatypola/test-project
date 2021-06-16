@@ -12,7 +12,6 @@ export default function charactersReducer(
 ) {
   switch (action.type) {
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_SUCCESS: {
-      console.log(action.type);
       return {...state, characters: action.characters, isFetching: false};
     }
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_REQUEST:

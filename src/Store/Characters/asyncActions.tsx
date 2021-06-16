@@ -1,24 +1,20 @@
 import {CharactersResponse} from 'Interfaces/responses';
 import api from 'Configs/api';
 import Toast from 'react-native-root-toast';
-import {fetchCharacters, isFetching, isError} from './actions';
+import {URLS} from 'Constants';
+import {
+  fetchCharactersSuccess,
+  fetchCharactersRequest,
+  fetchCharactersFailure,
+} from './actions';
 
-export const addCharactersThunk = () => async dispatch => {
+export const fetchCharactersThunk = () => async dispatch => {
   try {
-    dispatch(isFetching());
-    const characters: CharactersResponse = await api.get('character');
-    await dispatch(fetchCharacters(characters.results));
+    dispatch(fetchCharactersRequest());
+    const characters: CharactersResponse = await api.get(URLS.charactersPath);
+    await dispatch(fetchCharactersSuccess(characters.results));
   } catch (error) {
-    const toast = Toast.show('This is a message', {
-      duration: Toast.durations.LONG,
-      position: Toast.positions.BOTTOM,
-      shadow: true,
-      animation: true,
-      hideOnPress: true,
-      delay: 0,
-    });
-    dispatch(isError());
+    dispatch(fetchCharactersFailure());
+    Toast.show(error.message);
   }
 };
-
-export const func = () => 1;

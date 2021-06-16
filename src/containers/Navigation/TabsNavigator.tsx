@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Characters from 'Screens/Characters';
 import Locations from 'Screens/Locations';
 import Episodes from 'Screens/Episodes';
-import SCREENS from 'Constants/screens';
+import {SCREENS} from 'Constants';
 
 const Tab = createBottomTabNavigator();
 
