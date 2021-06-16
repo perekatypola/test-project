@@ -9,7 +9,9 @@
     "test": "jest",
     "lint": "eslint ."
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/bottom-tabs": "5.11.11",
@@ -29,7 +31,7 @@
     "react-redux": "7.2.4",
     "redux": "4.1.0",
     "redux-thunk": "2.3.0",
-    "reselect": "^4.0.0"
+    "reselect": "4.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.9",

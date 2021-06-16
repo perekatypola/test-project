@@ -15,7 +15,7 @@ const Navigator: FC = () => (
         component={Home}
         options={{title: 'Home'}}
       />
-      <Stack.Screen name={SCREENS.MAIN} component={TabsNavigation} />
+      <Stack.Screen name={SCREENS.TABS} component={TabsNavigation} />
     </Stack.Navigator>
   </NavigationContainer>
 );
