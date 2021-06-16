@@ -7,9 +7,9 @@ export default function charactersReducer(
   state: CharacterState = initCharacterState,
   action,
 ) {
-  console.log(action);
   switch (action.type) {
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_SUCCESS: {
+      console.log(action.type);
       return {...state, characters: action.characters};
     }
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_FAILURE:

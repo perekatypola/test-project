@@ -6,11 +6,10 @@ import {RootState} from 'Interfaces/store';
 import {createSelector} from 'reselect';
 import {addCharactersThunk} from 'Store/Characters/asyncActions';
 
-// const selectCharacters = createSelector(
-//   (state: RootState) => state.characters,
-//   characters => characters,
-// );
-const selectCharacters = (state: RootState) => state.characters;
+const selectCharacters = createSelector(
+  (state: RootState) => state.characters,
+  characters => characters,
+);
 
 const Characters = () => {
   const {characters} = useSelector(selectCharacters);

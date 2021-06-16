@@ -4,7 +4,7 @@ const SCREENS = {
   TABS: 'Tabs',
   LOCATIONS: 'Loсations',
   EPISODES: 'Episodes',
-  MAIN: 'Rick and Morty',
+  MAIN: 'Main',
 };
 
 export default SCREENS;
