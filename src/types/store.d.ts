@@ -1,3 +1,6 @@
+import {AnyAction} from 'redux';
+import {ThunkAction} from 'redux-thunk';
+
 export interface Character {
   name: string;
   status: string;
@@ -17,3 +20,5 @@ export interface Action<T> {
   readonly type: string;
   readonly payload?: T;
 }
+
+export type asyncAction = ThunkAction<void, RootState, unknown, AnyAction>;

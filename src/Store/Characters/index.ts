@@ -1,4 +1,4 @@
-import {CharacterState, Action} from 'interfaces/store';
+import {CharacterState, Action} from 'types/store';
 import CHARACTER_ACTIONS from './constants';
 
 const initialState = {

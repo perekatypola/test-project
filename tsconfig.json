@@ -19,8 +19,8 @@
       "screens/*": ["src/сontainers/screens/*"],
       "navigation/*": ["src/сontainers/navigation/*"],
       "store/*": ["src/store/*"],
-      "interfaces/*": ["src/interfaces/*"],
-      "configs/*": ["src/сonfigs/*"]
+      "configs/*": ["src/сonfigs/*"],
+      "types/*": ["src/types/*"]
     },
     "typeRoots": ["./src/types"]
   },

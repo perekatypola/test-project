@@ -12,6 +12,7 @@ module.exports = {
           store: './src/store',
           interfaces: './src/interfaces',
           configs: './src/configs',
+          types: './src/types',
         },
       },
     ],

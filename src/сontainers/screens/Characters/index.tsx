@@ -1,7 +1,7 @@
 import React, {ReactElement, useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from 'interfaces/store';
+import {RootState} from 'types/store';
 import {createSelector} from 'reselect';
 import {fetchCharactersThunk} from 'store/characters/asyncActions';
 
