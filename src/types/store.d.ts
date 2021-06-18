@@ -21,4 +21,4 @@ export interface Action<T> {
   readonly payload?: T;
 }
 
-export type asyncAction = ThunkAction<void, RootState, unknown, AnyAction>;
+export type AsyncAction = ThunkAction<void, RootState, unknown, AnyAction>;
