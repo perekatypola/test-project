@@ -12,3 +12,8 @@ export interface CharacterState {
 export interface RootState {
   characters: CharacterState;
 }
+
+export interface Action<T> {
+  readonly type: string;
+  readonly payload?: T;
+}

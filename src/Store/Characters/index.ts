@@ -1,4 +1,4 @@
-import {CharacterState} from 'interfaces/store';
+import {CharacterState, Action} from 'interfaces/store';
 import CHARACTER_ACTIONS from './constants';
 
 const initialState = {
@@ -8,11 +8,15 @@ const initialState = {
 
 export default function charactersReducer(
   state: CharacterState = initialState,
-  action,
-) {
-  switch (action.type) {
+  {type, payload = {}}: Action<Partial<CharacterState>>,
+): CharacterState {
+  switch (type) {
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_SUCCESS: {
-      return {...state, characters: action.characters, isFetching: false};
+      return {
+        ...state,
+        characters: payload.characters ?? [],
+        isFetching: false,
+      };
     }
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_REQUEST:
       return {...state, isFetching: true};
