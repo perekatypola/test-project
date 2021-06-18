@@ -1,4 +1,4 @@
-import React, {ReactElement, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from 'types/store';

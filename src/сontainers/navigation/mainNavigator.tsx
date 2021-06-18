@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {SCREENS} from '@app"/сonstants';
+import {SCREENS} from '@app/constants';
 import Home from 'сontainers/screens/home';
 import TabsNavigation from './tabsNavigator';
 
