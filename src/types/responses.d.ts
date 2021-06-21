@@ -1,5 +1,3 @@
-import {Character} from './store';
-
 export interface CharacterResponseInfo {
   next: string;
 }

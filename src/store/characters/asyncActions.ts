@@ -1,9 +1,9 @@
 import {CharactersResponse} from 'types/responses';
 import Toast from 'react-native-root-toast';
-import {AsyncAction} from 'types/store';
+import {URLS} from '@app/constants';
 import store from 'store';
-import api from 'сonfigs/api';
-import {URLS} from 'сonstants';
+import api from 'configs/api';
+
 import {
   fetchCharactersSuccess,
   fetchCharactersRequest,

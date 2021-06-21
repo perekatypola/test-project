@@ -1,8 +1,7 @@
-import {CharacterState, Action} from 'types/store';
 import CHARACTER_ACTIONS from './constants';
 
 const initialState = {
-  characters: [],
+  data: [],
   isFetching: false,
 };
 
@@ -14,7 +13,7 @@ export default function charactersReducer(
     case CHARACTER_ACTIONS.FETCH_CHARACTERS_SUCCESS: {
       return {
         ...state,
-        characters: payload.characters ?? [],
+        data: payload.data ?? [],
         isFetching: false,
       };
     }

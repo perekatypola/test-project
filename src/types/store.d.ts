@@ -1,24 +1,26 @@
-import {AnyAction} from 'redux';
-import {ThunkAction} from 'redux-thunk';
-
-export interface Character {
+interface Character {
   name: string;
   status: string;
   species: string;
 }
 
-export interface CharacterState {
-  characters: Character[];
+interface CharacterState {
+  data: Character[];
   isFetching: boolean;
 }
 
-export interface RootState {
+interface RootState {
   characters: CharacterState;
 }
 
-export interface Action<T> {
+interface Action<T> {
   readonly type: string;
   readonly payload?: T;
 }
 
-export type AsyncAction = ThunkAction<void, RootState, unknown, AnyAction>;
+type AsyncAction = import('redux-thunk').ThunkAction<
+  void,
+  RootState,
+  unknown,
+  import('redux').AnyAction
+>;
