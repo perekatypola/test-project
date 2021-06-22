@@ -6,7 +6,7 @@ import {fetchCharactersThunk} from 'store/characters/asyncActions';
 
 const Characters: React.FC = () => {
   const dispatch = useDispatch();
-  const {data: characters} = useSelector(selectCharacters);
+  const {data} = useSelector(selectCharacters);
 
   useEffect(() => {
     dispatch(fetchCharactersThunk());
@@ -15,7 +15,7 @@ const Characters: React.FC = () => {
   return (
     <View>
       <FlatList
-        data={characters}
+        data={data}
         renderItem={({item}) => <Text>{item.name}</Text>}
         keyExtractor={item => item.name}
       />
