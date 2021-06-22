@@ -14,7 +14,7 @@ export const fetchCharactersThunk =
   (): AsyncAction => async (dispatch: typeof store.dispatch) => {
     try {
       dispatch(fetchCharactersRequest());
-      const characters: CharactersResponse = await api.get(URLS.charactersPath);
+      const characters: CharactersResponse = await api.get(URLS.CHARACTER);
       dispatch(fetchCharactersSuccess(characters.results));
     } catch (error) {
       dispatch(fetchCharactersFailure());
