@@ -7,6 +7,7 @@ import {selectEpisodes} from 'store/episodes/selectors';
 const Episodes: React.FC = () => {
   const dispatch = useDispatch();
   const {data} = useSelector(selectEpisodes);
+  console.log(useSelector(selectEpisodes));
 
   useEffect(() => {
     dispatch(fetchEpisodesThunk());

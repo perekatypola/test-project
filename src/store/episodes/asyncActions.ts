@@ -1,5 +1,5 @@
 import Toast from 'react-native-root-toast';
-import axios from 'axios';
+import api from 'configs/api';
 import {URLS} from '@app/constants';
 
 import {
@@ -11,7 +11,8 @@ import {
 export const fetchEpisodesThunk = (): AsyncAction => async dispatch => {
   try {
     dispatch(fetchEpisodesRequest());
-    const episodes: EpisodeResponse = await axios.get(URLS.EPISODE);
+    const episodes: EpisodeResponse = await api.get(URLS.EPISODE);
+    console.log(episodes);
     dispatch(fetchEpisodesSuccess(episodes.results));
   } catch (error) {
     dispatch(fetchEpisodesFailure());

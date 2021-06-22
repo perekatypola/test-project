@@ -9,6 +9,7 @@ export const episodesReducer = (
   state = initialState,
   {type, payload = {}}: Action<Partial<EpisodeState>>,
 ): EpisodeState => {
+  console.log(payload);
   switch (type) {
     case EPISODES_ACTIONS.FETCH_EPISODES_SUCCESS: {
       return {...state, data: payload.data ?? [], isFetching: false};
