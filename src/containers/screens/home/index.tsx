@@ -2,8 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {View, Button, SafeAreaView} from 'react-native';
-import SCREENS from 'Constants/screens';
-import i18n from '../../../Localization';
+import {SCREENS} from '@app/constants';
 import styles from './styles';
 
 const Home: React.FC = () => {
@@ -16,13 +15,13 @@ const Home: React.FC = () => {
       <View style={styles.mainContainer}>
         <View style={styles.container}>
           <Button
-            title={t('description.navToTabs')}
+            title={t('description.navigateToTabs')}
             onPress={() => {
               navigation.navigate('Rick and Morty');
             }}
           />
           <Button
-            title={t('description.navToLang')}
+            title={t('description.languageChange')}
             onPress={() => {
               navigation.navigate(SCREENS.LANGUAGES);
             }}

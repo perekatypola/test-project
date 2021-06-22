@@ -1,7 +1,7 @@
 {
     "description": {
-        "homeName": "Язык приложения русский",
-        "navToLang": "Сменить язык",
-        "navToTabs": "Рик и Морти"
+        "languageMessage": "Язык приложения русский",
+        "languageChange": "Сменить язык",
+        "navigateToTabs": "Рик и Морти"
     }
 }

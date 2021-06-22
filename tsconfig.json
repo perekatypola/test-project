@@ -14,16 +14,15 @@
     "baseUrl": "./",
     "paths": {
       "*": ["src/*"],
-      "Constants/*": ["./src/Constants/*"],
-      "Screens/*": ["src/Containers/Screens/*"],
-      "Navigation/*": ["src/Containers/Navigation/*"],
-      "Store/*": ["./src/Store/*"],
-      "Interfaces/*": ["./src/Interfaces/*"],
-      "Configs/*": ["./src/Configs/*"],
-      "Localization/*": ["./src/Localization/*"]
+      "@app/constants/*": ["src/constants/*"],
+      "@app/constants":["src/constants/index.ts"],
+      "сontainers/*":["src/containers/*"],
+      "store/*": ["src/store/*"],
+      "configs/*": ["src/configs/*"],
+      "localization/*": ["src/localization/*"],
     },
     "typeRoots": ["./src/types"],
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
   },
   "exclude": [
     "node_modules",

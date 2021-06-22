@@ -1,10 +1,11 @@
 const SCREENS = {
   HOME: 'Home',
   CHARACTERS: 'Characters',
-  TABS: 'TabsNavigator',
-  LOCATIONS: 'Lovations',
+  TABS: 'Tabs',
+  LOCATIONS: 'Loсations',
   EPISODES: 'Episodes',
   LANGUAGES: 'Languages',
+  MAIN: 'Main',
 };
 
 export default SCREENS;

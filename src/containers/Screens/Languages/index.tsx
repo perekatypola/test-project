@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Button, Text, SafeAreaView} from 'react-native';
 import {useTranslation} from 'react-i18next';
-import i18n from '../../../Localization';
+import i18n from 'localization';
 import styles from './styles';
 
 const Languages: React.FC = () => {
@@ -11,7 +11,7 @@ const Languages: React.FC = () => {
     <SafeAreaView>
       <View style={styles.mainContainer}>
         <View style={styles.text}>
-          <Text>{t('description.homeName')}</Text>
+          <Text>{t('description.languageMessage')}</Text>
         </View>
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
