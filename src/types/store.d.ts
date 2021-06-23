@@ -12,6 +12,7 @@ interface CharacterState {
 interface RootState {
   characters: CharacterState;
   episodes: EpisodeState;
+  locations: LocationState;
 }
 
 interface Action<T> {
@@ -34,5 +35,15 @@ interface Episode {
 
 interface EpisodeState {
   data: Episode[];
+  isFetching: boolean;
+}
+
+interface Location {
+  name: string;
+  type: string;
+}
+
+interface LocationState {
+  data: Location[];
   isFetching: boolean;
 }
