@@ -12,17 +12,17 @@ const TabsNavigation: React.FC = () => (
     <Tab.Screen
       name={SCREENS.CHARACTERS}
       component={Characters}
-      options={{title: 'Characters'}}
+      options={{title: SCREENS.CHARACTERS}}
     />
     <Tab.Screen
       name={SCREENS.LOCATIONS}
       component={Locations}
-      options={{title: 'Locations'}}
+      options={{title: SCREENS.LOCATIONS}}
     />
     <Tab.Screen
       name={SCREENS.EPISODES}
       component={Episodes}
-      options={{title: 'Episodes'}}
+      options={{title: SCREENS.EPISODES}}
     />
   </Tab.Navigator>
 );

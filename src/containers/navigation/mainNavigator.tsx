@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {SCREENS} from '@app/constants';
 import Home from 'containers/screens/home';
 import TabsNavigation from './tabsNavigator';
+import 'constants';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +14,7 @@ const Navigator: FC = () => (
       <Stack.Screen
         name={SCREENS.HOME}
         component={Home}
-        options={{title: 'Home'}}
+        options={{title: SCREENS.HOME}}
       />
       <Stack.Screen name={SCREENS.MAIN} component={TabsNavigation} />
     </Stack.Navigator>
