@@ -1,5 +1,6 @@
+import MemorizedListItem from 'components/renderItem';
 import React, {useEffect} from 'react';
-import {View, FlatList, Text} from 'react-native';
+import {View, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchLocationsThunk} from 'store/locations/asyncActions';
 import {selectLocations} from 'store/locations/selectors';
@@ -16,7 +17,7 @@ const Locations: React.FC = () => {
     <View>
       <FlatList
         data={data}
-        renderItem={({item}) => <Text>{item.name}</Text>}
+        renderItem={({item}) => <MemorizedListItem name={item.name} />}
         keyExtractor={item => item.name}
       />
     </View>

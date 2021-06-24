@@ -3,6 +3,7 @@ import {View, Text, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {selectCharacters} from 'store/characters/selectors';
 import {fetchCharactersThunk} from 'store/characters/asyncActions';
+import MemorizedListItem from 'components/renderItem';
 
 const Characters: React.FC = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const Characters: React.FC = () => {
     <View>
       <FlatList
         data={data}
-        renderItem={({item}) => <Text>{item.name}</Text>}
+        renderItem={({item}) => <MemorizedListItem name={item.name} />}
         keyExtractor={item => item.name}
       />
     </View>

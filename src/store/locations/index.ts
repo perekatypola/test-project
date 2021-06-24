@@ -5,7 +5,7 @@ const initialState = {
   isFetching: false,
 };
 
-export default function charactersReducer(
+export default function locationsReducer(
   state: LocationState = initialState,
   {type, payload = {}}: Action<Partial<LocationState>>,
 ): LocationState {

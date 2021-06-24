@@ -47,3 +47,7 @@ interface LocationState {
   data: Location[];
   isFetching: boolean;
 }
+
+interface RenderItem {
+  name: string;
+}

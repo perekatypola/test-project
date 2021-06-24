@@ -10,10 +10,11 @@ import {
 export const fetchLocationsThunk = (): AsyncAction => async dispatch => {
   try {
     dispatch(fetchLocationsRequest());
-    const locations: Location[] = await api.get(URLS.LOCATION);
-    dispatch(fetchLocationsSuccess(locations));
+    const locations: LocationResponse = await api.get(URLS.LOCATION);
+    dispatch(fetchLocationsSuccess(locations.results));
   } catch (error) {
     dispatch(fetchLocationsFailure());
+    console.log(error);
     Toast.show(error.message);
   }
 };
