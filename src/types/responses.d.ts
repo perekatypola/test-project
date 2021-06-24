@@ -6,6 +6,10 @@ interface EpisodesResponseInfo {
   next: string;
 }
 
+interface LocationResponseInfo {
+  next: string;
+}
+
 interface CharactersResponse {
   info: CharacterResponseInfo;
   results: Character[];
@@ -14,4 +18,9 @@ interface CharactersResponse {
 interface EpisodeResponse {
   info: EpisodesResponseInfo;
   results: Episode[];
+}
+
+interface LocationsResponse {
+  info: LocationResponseInfo;
+  results: Location[];
 }
