@@ -1,8 +1,8 @@
 {
     "description": {
         "languageMessage": "Язык приложения русский",
-        "languageChange": "Сменить язык",
-        "navigateToTabs": "Рик и Морти",
+        "changeLanguage": "Сменить язык",
+        "discoverRickAndMorty": "Рик и Морти",
         "Home": "Домашняя",
         "Characters": "Персонажи",
         "Episodes": "Эпизоды",
