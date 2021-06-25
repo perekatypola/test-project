@@ -7,7 +7,6 @@ import styles from './styles';
 
 const Home: React.FC = () => {
   const navigation = useNavigation();
-
   const {t} = useTranslation();
 
   return (
@@ -16,15 +15,11 @@ const Home: React.FC = () => {
         <View style={styles.container}>
           <Button
             title={t('description.navigateToTabs')}
-            onPress={() => {
-              navigation.navigate('Rick and Morty');
-            }}
+            onPress={() => navigation.navigate(SCREENS.RICK_AND_MORTY)}
           />
           <Button
             title={t('description.languageChange')}
-            onPress={() => {
-              navigation.navigate(SCREENS.LANGUAGES);
-            }}
+            onPress={() => navigation.navigate(SCREENS.LANGUAGES)}
           />
         </View>
       </View>

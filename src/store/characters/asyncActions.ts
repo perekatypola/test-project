@@ -13,7 +13,6 @@ export const fetchCharactersThunk = (): AsyncAction => async dispatch => {
   try {
     dispatch(fetchCharactersRequest());
     const characters: CharactersResponse = await api.get(URLS.CHARACTER);
-    console.log(characters);
     dispatch(fetchCharactersSuccess(characters.results));
   } catch (error) {
     dispatch(fetchCharactersFailure());
