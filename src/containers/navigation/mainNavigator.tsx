@@ -4,22 +4,26 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from 'containers/screens/home';
 import Languages from 'containers/screens/languages';
 import {SCREENS} from '@app/constants';
+import {useTranslation} from 'react-i18next';
 import TabsNavigation from './tabsNavigator';
 
 const Stack = createStackNavigator();
 
-const Navigator: FC = () => (
-  <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen
-        name={SCREENS.HOME}
-        component={Home}
-        options={{title: 'Home'}}
-      />
-      <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
-      <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />
-    </Stack.Navigator>
-  </NavigationContainer>
-);
+const Navigator: FC = () => {
+  const {t} = useTranslation();
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name={SCREENS.HOME}
+          component={Home}
+          options={{title: t('description.Home')}}
+        />
+        <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
+        <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 export default Navigator;
