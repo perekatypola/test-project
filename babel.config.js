@@ -5,11 +5,21 @@ module.exports = {
       'module-resolver',
       {
         root: ['./src'],
+        extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
         alias: {
-          Navigation: './src/Navigation',
-          Constants: './src/Constants',
-          Screens: './src/Screens',
+          '@app/constants': './src/constants',
+          сontainers: './src/containers',
+          store: './src/store',
+          configs: './src/configs',
         },
+      },
+    ],
+    [
+      'module:react-native-dotenv',
+      {
+        moduleName: 'react-native-dotenv',
+        path: '.env',
+        whitelist: 'API_URL',
       },
     ],
   ],

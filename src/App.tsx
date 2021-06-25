@@ -1,11 +1,13 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
-import Navigator from './Navigation';
+import {Provider} from 'react-redux';
+import Navigator from 'containers/navigation/mainNavigator';
+import store from './store';
+import 'configs/api';
 
 const App: React.FC = () => (
-  <SafeAreaView>
+  <Provider store={store}>
     <Navigator />
-  </SafeAreaView>
+  </Provider>
 );
 
 export default App;
