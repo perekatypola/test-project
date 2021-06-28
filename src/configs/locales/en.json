@@ -3,10 +3,10 @@
         "languageMessage": "Application language is English now",
         "changeLanguage": "Change language",
         "discoverRickAndMorty": "Discover Rick and Morty",
-        "Home": "Home",
-        "Characters": "Characters",
-        "Episodes": "Episodes",
-        "Locations": "Locations",
+        "home": "Home",
+        "characters": "Characters",
+        "episodes": "Episodes",
+        "locations": "Locations",
         "en": "en",
         "rus": "rus"
     }

@@ -17,7 +17,7 @@ const Navigator: FC = () => {
         <Stack.Screen
           name={SCREENS.HOME}
           component={Home}
-          options={{title: t('description.Home')}}
+          options={{title: t('description.home')}}
         />
         <Stack.Screen name={SCREENS.TABS} component={TabsNavigation} />
         <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />

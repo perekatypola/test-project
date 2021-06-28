@@ -3,10 +3,10 @@
         "languageMessage": "Язык приложения русский",
         "changeLanguage": "Сменить язык",
         "discoverRickAndMorty": "Рик и Морти",
-        "Home": "Домашняя",
-        "Characters": "Персонажи",
-        "Episodes": "Эпизоды",
-        "Locations": "Локации",
+        "home": "Домашняя",
+        "characters": "Персонажи",
+        "episodes": "Эпизоды",
+        "locations": "Локации",
         "en": "анг",
         "rus": "рус"
     }
