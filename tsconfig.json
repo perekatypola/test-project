@@ -19,7 +19,6 @@
       "сontainers/*":["src/containers/*"],
       "store/*": ["src/store/*"],
       "configs/*": ["src/configs/*"],
-      "localization/*": ["src/localization/*"],
     },
     "typeRoots": ["./src/types"],
     "resolveJsonModule": true,

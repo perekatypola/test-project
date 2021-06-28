@@ -6,7 +6,6 @@ const SCREENS = {
   EPISODES: 'Episodes',
   LANGUAGES: 'Languages',
   MAIN: 'Main',
-  RICK_AND_MORTY: 'Rick and Morty',
 };
 
 export default SCREENS;

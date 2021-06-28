@@ -24,11 +24,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
   },
-  text: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 });
 
 export default styles;
