@@ -6,6 +6,8 @@
         "Home": "Домашняя",
         "Characters": "Персонажи",
         "Episodes": "Эпизоды",
-        "Locations": "Локации"
+        "Locations": "Локации",
+        "en": "анг",
+        "rus": "рус"
     }
 }

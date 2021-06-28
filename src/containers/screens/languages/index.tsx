@@ -10,19 +10,26 @@ const Languages: React.FC = () => {
   return (
     <SafeAreaView>
       <View style={styles.mainContainer}>
-        <View style={styles.text}>
+        <View style={styles.text_container}>
           <Text>{t('description.languageMessage')}</Text>
         </View>
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="rus" onPress={() => i18n.changeLanguage('ru')} />
+            <Button
+              title={t('description.rus')}
+              onPress={() => i18n.changeLanguage('ru')}
+            />
           </View>
           <View style={styles.button}>
-            <Button title="en" onPress={() => i18n.changeLanguage('en')} />
+            <Button
+              title={t('description.en')}
+              onPress={() => i18n.changeLanguage('en')}
+            />
           </View>
         </View>
       </View>
     </SafeAreaView>
   );
 };
+
 export default Languages;

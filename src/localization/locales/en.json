@@ -6,6 +6,8 @@
         "Home": "Home",
         "Characters": "Characters",
         "Episodes": "Episodes",
-        "Locations": "Locations"
+        "Locations": "Locations",
+        "en": "en",
+        "rus": "rus"
     }
 }

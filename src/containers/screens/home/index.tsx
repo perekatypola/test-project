@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <View style={styles.container}>
           <Button
             title={t('description.discoverRickAndMorty')}
-            onPress={() => navigation.navigate(SCREENS.RICK_AND_MORTY)}
+            onPress={() => navigation.navigate(SCREENS.TABS)}
           />
           <Button
             title={t('description.changeLanguage')}
