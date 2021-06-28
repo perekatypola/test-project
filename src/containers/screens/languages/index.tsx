@@ -10,7 +10,7 @@ const Languages: React.FC = () => {
   return (
     <SafeAreaView>
       <View style={styles.mainContainer}>
-        <View style={styles.text_container}>
+        <View style={styles.textContainer}>
           <Text>{t('description.languageMessage')}</Text>
         </View>
         <View style={styles.buttonContainer}>
