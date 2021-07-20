@@ -11,24 +11,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     height: '100%',
   },
-  button: {
-    borderWidth: 1,
-    borderColor: 'blue',
-    width: '15%',
-    borderRadius: 5,
-    margin: 2,
-  },
-  buttonContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-  },
-  text: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 });
 
 export default styles;

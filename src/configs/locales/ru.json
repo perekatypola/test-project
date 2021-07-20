@@ -1,0 +1,13 @@
+{
+    "description": {
+        "languageMessage": "Язык приложения русский",
+        "changeLanguage": "Сменить язык",
+        "discoverRickAndMorty": "Рик и Морти",
+        "home": "Домашняя",
+        "characters": "Персонажи",
+        "episodes": "Эпизоды",
+        "locations": "Локации",
+        "en": "анг",
+        "rus": "рус"
+    }
+}

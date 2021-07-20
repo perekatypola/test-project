@@ -5,6 +5,7 @@ import Home from 'containers/screens/home';
 import MemorizedCharacterInfo from 'containers/screens/characterInfo';
 import Languages from 'containers/screens/languages';
 import {SCREENS} from '@app/constants';
+import {useTranslation} from 'react-i18next';
 import TabsNavigation from './tabsNavigator';
 
 const Stack = createStackNavigator();
@@ -17,7 +18,7 @@ const Navigator: FC = () => (
         component={Home}
         options={{title: 'Home'}}
       />
-      <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
+      <Stack.Screen name={SCREENS.TABS} component={TabsNavigation} />
       <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />
       <Stack.Screen
         name={SCREENS.CHARACTER_ITEM}

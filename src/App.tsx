@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import Navigator from 'containers/navigation/mainNavigator';
 import {I18nextProvider} from 'react-i18next';
-import i18n from 'localization';
+import i18n from 'configs/i18n';
 import store from 'store';
 import 'configs/api';
 

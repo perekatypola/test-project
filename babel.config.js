@@ -11,7 +11,6 @@ module.exports = {
           сontainers: './src/containers',
           store: './src/store',
           configs: './src/configs',
-          localization: './src/localization',
         },
       },
     ],

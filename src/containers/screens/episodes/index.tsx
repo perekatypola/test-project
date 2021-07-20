@@ -1,4 +1,5 @@
 import MemorizedListItem from 'components/renderItem';
+import {SCREENS} from '@app/constants';
 import React, {useEffect} from 'react';
 import {View, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
@@ -17,7 +18,12 @@ const Episodes: React.FC = () => {
     <View>
       <FlatList
         data={data}
-        renderItem={({item}) => <MemorizedListItem name={item.name} />}
+        renderItem={({item}) => (
+          <MemorizedListItem
+            navigateTo={SCREENS.CHARACTER_ITEM}
+            name={item.name}
+          />
+        )}
         keyExtractor={item => item.name}
       />
     </View>
