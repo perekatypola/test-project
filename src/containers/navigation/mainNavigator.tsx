@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from 'containers/screens/home';
+import MemorizedCharacterInfo from 'containers/screens/characterInfo';
 import Languages from 'containers/screens/languages';
 import {SCREENS} from '@app/constants';
 import TabsNavigation from './tabsNavigator';
@@ -18,6 +19,10 @@ const Navigator: FC = () => (
       />
       <Stack.Screen name="Rick and Morty" component={TabsNavigation} />
       <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />
+      <Stack.Screen
+        name={SCREENS.CHARACTER_ITEM}
+        component={MemorizedCharacterInfo}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 );

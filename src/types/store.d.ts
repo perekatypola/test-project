@@ -2,6 +2,8 @@ interface Character {
   name: string;
   status: string;
   species: string;
+  gender: string;
+  image: string;
 }
 
 interface CharacterState {
@@ -48,6 +50,9 @@ interface LocationState {
   isFetching: boolean;
 }
 
-interface RenderItem {
+interface CharacterItem {
   name: string;
+  image: string;
+  gender: string;
+  species: string;
 }
