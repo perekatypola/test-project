@@ -15,12 +15,13 @@
     "paths": {
       "*": ["src/*"],
       "@app/constants/*": ["src/constants/*"],
-      "@app/constants": ["src/constants/index.ts"],
-      "сontainers/*": ["src/containers/*"],
+      "@app/constants":["src/constants/index.ts"],
+      "сontainers/*":["src/containers/*"],
       "store/*": ["src/store/*"],
       "configs/*": ["src/configs/*"],
     },
-    "typeRoots": ["./src/types"]
+    "typeRoots": ["./src/types"],
+    "resolveJsonModule": true,
   },
   "exclude": [
     "node_modules",

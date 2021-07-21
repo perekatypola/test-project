@@ -4,6 +4,7 @@ const SCREENS = {
   TABS: 'Tabs',
   LOCATIONS: 'Loсations',
   EPISODES: 'Episodes',
+  LANGUAGES: 'Languages',
   MAIN: 'Main',
 };
 
