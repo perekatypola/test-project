@@ -11,8 +11,6 @@ const CharacterInfo = ({route}): ReactElement => {
     }
   });
   const {name, species, gender, image} = item.current;
-  console.log(item.current);
-  const renders = useRef(0);
   return (
     <View>
       <Image
@@ -24,21 +22,8 @@ const CharacterInfo = ({route}): ReactElement => {
       <Text>Name: {name}</Text>
       <Text>Species: {species}</Text>
       <Text>Gender: {gender}</Text>
-      <Text>renders: {++renders.current}</Text>
     </View>
   );
 };
 
-const MemorizedCharacterInfo = React.memo(
-  CharacterInfo,
-  (prevProps, nextProps) => {
-    console.log(prevProps.route.params.name);
-    if (prevProps.route.params.name === nextProps.route.params.name) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-);
-
-export default MemorizedCharacterInfo;
+export default CharacterInfo;

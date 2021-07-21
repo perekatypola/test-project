@@ -20,7 +20,7 @@ const Episodes: React.FC = () => {
         data={data}
         renderItem={({item}) => (
           <MemorizedListItem
-            navigateTo={SCREENS.CHARACTER_ITEM}
+            navigateTo={SCREENS.EPISODE_ITEM}
             name={item.name}
           />
         )}

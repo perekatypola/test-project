@@ -1,6 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {ReactElement, useRef} from 'react';
-import {View, Button, Text, NativeModules} from 'react-native';
+import {View, Button, Text} from 'react-native';
 import styles from './styles';
 
 const ListItem = ({navigateTo, name}: RenderItem): ReactElement => {
