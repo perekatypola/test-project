@@ -21,11 +21,20 @@ const Navigator: FC = () => {
           component={Home}
           options={{title: t('description.home')}}
         />
-        <Stack.Screen name={SCREENS.TABS} component={TabsNavigation} />
-        <Stack.Screen name={SCREENS.LANGUAGES} component={Languages} />
-        <Stack.Screen name={SCREENS.CHARACTER_ITEM} component={CharacterInfo} />
-        <Stack.Screen name={SCREENS.EPISODE_ITEM} component={EpisodeInfo} />
-        <Stack.Screen name={SCREENS.LOCATION_ITEM} component={LocationInfo} />
+        <Stack.Screen name={t('description.tabs')} component={TabsNavigation} />
+        <Stack.Screen name={t('description.languages')} component={Languages} />
+        <Stack.Screen
+          name={t('description.characterInfo')}
+          component={CharacterInfo}
+        />
+        <Stack.Screen
+          name={t('description.episodeInfo')}
+          component={EpisodeInfo}
+        />
+        <Stack.Screen
+          name={t('description.locationInfo')}
+          component={LocationInfo}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

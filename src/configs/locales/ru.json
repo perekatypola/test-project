@@ -8,6 +8,11 @@
         "episodes": "Эпизоды",
         "locations": "Локации",
         "en": "анг",
-        "rus": "рус"
+        "rus": "рус",
+        "tabs": "Табы",
+        "languages": "Языки",
+        "characterInfo": "Информация о персонаже",
+        "episodeInfo": "Информация об эпизоде",
+        "locationInfo": "Информация о локации"
     }
 }

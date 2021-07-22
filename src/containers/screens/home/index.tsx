@@ -15,11 +15,11 @@ const Home: React.FC = () => {
         <View style={styles.container}>
           <Button
             title={t('description.discoverRickAndMorty')}
-            onPress={() => navigation.navigate(SCREENS.TABS)}
+            onPress={() => navigation.navigate(t('description.tabs'))}
           />
           <Button
             title={t('description.changeLanguage')}
-            onPress={() => navigation.navigate(SCREENS.LANGUAGES)}
+            onPress={() => navigation.navigate(t('description.languages'))}
           />
         </View>
       </View>

@@ -5,6 +5,7 @@ import {View, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchLocationsThunk} from 'store/locations/asyncActions';
 import {selectLocations} from 'store/locations/selectors';
+import {useTranslation} from 'react-i18next';
 
 const Locations: React.FC = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const Locations: React.FC = () => {
   useEffect(() => {
     dispatch(fetchLocationsThunk());
   }, []);
+  const {t} = useTranslation();
 
   return (
     <View>
@@ -21,7 +23,7 @@ const Locations: React.FC = () => {
         renderItem={({item}) => (
           <MemorizedListItem
             id={item.id}
-            navigateTo={SCREENS.LOCATION_ITEM}
+            navigateTo={t('description.locationInfo')}
             name={item.name}
           />
         )}

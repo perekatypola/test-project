@@ -5,6 +5,7 @@ import {SCREENS} from '@app/constants';
 import {selectCharacters} from 'store/characters/selectors';
 import {fetchCharactersThunk} from 'store/characters/asyncActions';
 import MemorizedListItem from 'components/renderItem';
+import {useTranslation} from 'react-i18next';
 
 const Characters: React.FC = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,8 @@ const Characters: React.FC = () => {
   useEffect(() => {
     dispatch(fetchCharactersThunk());
   }, []);
-
+  const {t} = useTranslation();
+  console.log(t('description.characterInfo'));
   return (
     <View>
       <FlatList
@@ -21,10 +23,10 @@ const Characters: React.FC = () => {
           <MemorizedListItem
             id={item.id}
             name={item.name}
-            navigateTo={SCREENS.CHARACTER_ITEM}
+            navigateTo={t('description.characterInfo')}
           />
         )}
-        keyExtractor={item => item.name}
+        keyExtractor={item => item.id.toString()}
       />
     </View>
   );
