@@ -12,7 +12,6 @@ export const fetchEpisodesThunk = (): AsyncAction => async dispatch => {
   try {
     dispatch(fetchEpisodesRequest());
     const episodes: EpisodeResponse = await api.get(URLS.EPISODE);
-    console.log(episodes);
     dispatch(fetchEpisodesSuccess(episodes.results));
   } catch (error) {
     dispatch(fetchEpisodesFailure());

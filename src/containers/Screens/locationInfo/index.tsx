@@ -1,16 +1,10 @@
 import React, {ReactElement, useRef} from 'react';
 import {Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
-import {selectLocations} from 'store/locations/selectors';
+import {selectLocation} from 'store/locations/selectors';
 
 const LocationInfo = ({route}): ReactElement => {
-  const item = useRef({});
-  useSelector(selectLocations).data.forEach(el => {
-    if (el.name === route.params.name) {
-      item.current = el;
-    }
-  });
-  const {name, type, dimension} = item.current;
+  const {name, type, dimension} = useSelector(selectLocation(route.params.id));
   return (
     <View>
       <Text>Name: {name}</Text>

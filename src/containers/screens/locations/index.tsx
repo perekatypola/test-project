@@ -20,6 +20,7 @@ const Locations: React.FC = () => {
         data={data}
         renderItem={({item}) => (
           <MemorizedListItem
+            id={item.id}
             navigateTo={SCREENS.LOCATION_ITEM}
             name={item.name}
           />

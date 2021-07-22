@@ -9,7 +9,6 @@ import MemorizedListItem from 'components/renderItem';
 const Characters: React.FC = () => {
   const dispatch = useDispatch();
   const {data} = useSelector(selectCharacters);
-  console.log('render characters');
   useEffect(() => {
     dispatch(fetchCharactersThunk());
   }, []);
@@ -20,6 +19,7 @@ const Characters: React.FC = () => {
         data={data}
         renderItem={({item}) => (
           <MemorizedListItem
+            id={item.id}
             name={item.name}
             navigateTo={SCREENS.CHARACTER_ITEM}
           />

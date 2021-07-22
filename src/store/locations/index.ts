@@ -10,13 +10,12 @@ export default function locationsReducer(
   {type, payload = {}}: Action<Partial<LocationState>>,
 ): LocationState {
   switch (type) {
-    case LOCATIONS_ACTIONS.FETCH_LOCATIONS_SUCCESS: {
+    case LOCATIONS_ACTIONS.FETCH_LOCATIONS_SUCCESS:
       return {
         ...state,
         data: payload.data ?? [],
         isFetching: false,
       };
-    }
     case LOCATIONS_ACTIONS.FETCH_LOCATIONS_REQUEST:
       return {...state, isFetching: true};
     case LOCATIONS_ACTIONS.FETCH_LOCATIONS_FAILURE:

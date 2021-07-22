@@ -35,4 +35,5 @@ const Languages: React.FC = () => {
     </SafeAreaView>
   );
 };
+
 export default Languages;

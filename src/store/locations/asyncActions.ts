@@ -14,7 +14,6 @@ export const fetchLocationsThunk = (): AsyncAction => async dispatch => {
     dispatch(fetchLocationsSuccess(locations.results));
   } catch (error) {
     dispatch(fetchLocationsFailure());
-    console.log(error);
     Toast.show(error.message);
   }
 };
