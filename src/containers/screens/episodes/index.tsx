@@ -5,6 +5,7 @@ import {View, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchEpisodesThunk} from 'store/episodes/asyncActions';
 import {selectEpisodes} from 'store/episodes/selectors';
+import {useTranslation} from 'react-i18next';
 
 const Episodes: React.FC = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const Episodes: React.FC = () => {
   useEffect(() => {
     dispatch(fetchEpisodesThunk());
   }, []);
+  const {t} = useTranslation();
 
   return (
     <View>
@@ -21,7 +23,7 @@ const Episodes: React.FC = () => {
         renderItem={({item}) => (
           <MemorizedListItem
             id={item.id}
-            navigateTo={SCREENS.EPISODE_ITEM}
+            navigateTo={t('description.episodeInfo')}
             name={item.name}
           />
         )}
