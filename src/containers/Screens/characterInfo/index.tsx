@@ -1,4 +1,5 @@
 import React, {ReactElement} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Image, Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {selectCharacter} from 'store/characters/selectors';
@@ -8,6 +9,8 @@ const CharacterInfo = ({route}): ReactElement => {
   const {name, species, gender, image} = useSelector(
     selectCharacter(route.params.id),
   );
+  const {t} = useTranslation();
+
   return (
     <View>
       <Image
@@ -16,9 +19,15 @@ const CharacterInfo = ({route}): ReactElement => {
         }}
         style={styles.image}
       />
-      <Text>Name: {name}</Text>
-      <Text>Species: {species}</Text>
-      <Text>Gender: {gender}</Text>
+      <Text>
+        {t('description.name')}: {name}
+      </Text>
+      <Text>
+        {t('description.species')}: {species}
+      </Text>
+      <Text>
+        {t('description.gender')} {gender}
+      </Text>
     </View>
   );
 };

@@ -13,6 +13,13 @@
         "languages": "Languages",
         "characterInfo": "Character Info",
         "episodeInfo": "Episode Info",
-        "locationInfo": "Location Info"
+        "locationInfo": "Location Info",
+        "name": "Name",
+        "species": "Species",
+        "gender": "Gender",
+        "type": "Type",
+        "dimension": "Dimension",
+        "airDate": "Air date",
+        "episode": "Episode"
     }
 }

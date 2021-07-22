@@ -13,6 +13,13 @@
         "languages": "Языки",
         "characterInfo": "Информация о персонаже",
         "episodeInfo": "Информация об эпизоде",
-        "locationInfo": "Информация о локации"
+        "locationInfo": "Информация о локации",
+        "name": "Имя",
+        "species": "Вид",
+        "gender": "Гендер",
+        "type": "Тип",
+        "dimension": "Измерение",
+        "airDate": "Дата выпуска",
+        "episode": "Эпизод"
     }
 }
