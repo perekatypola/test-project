@@ -25,7 +25,7 @@ const Episodes: React.FC = () => {
             name={item.name}
           />
         )}
-        keyExtractor={item => item.name}
+        keyExtractor={item => item.id.toString()}
       />
     </View>
   );

@@ -1,4 +1,4 @@
-import React, {ReactElement, useRef} from 'react';
+import React, {ReactElement} from 'react';
 import {Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {selectLocation} from 'store/locations/selectors';
