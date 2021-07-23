@@ -1,4 +1,3 @@
-import {CharactersResponse} from 'types/responses';
 import Toast from 'react-native-root-toast';
 import {URLS} from '@app/constants';
 import api from 'configs/api';

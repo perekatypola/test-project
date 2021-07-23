@@ -3,11 +3,23 @@
         "languageMessage": "Язык приложения русский",
         "changeLanguage": "Сменить язык",
         "discoverRickAndMorty": "Рик и Морти",
-        "home": "Домашняя",
+        "home": "Домашняя страница",
         "characters": "Персонажи",
         "episodes": "Эпизоды",
         "locations": "Локации",
         "en": "анг",
-        "rus": "рус"
+        "rus": "рус",
+        "tabs": "Табы",
+        "languages": "Языки",
+        "characterInfo": "Информация о персонаже",
+        "episodeInfo": "Информация об эпизоде",
+        "locationInfo": "Информация о локации",
+        "name": "Имя",
+        "species": "Вид",
+        "gender": "Гендер",
+        "type": "Тип",
+        "dimension": "Измерение",
+        "airDate": "Дата выпуска",
+        "episode": "Эпизод"
     }
 }

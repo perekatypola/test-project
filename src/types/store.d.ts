@@ -1,7 +1,10 @@
 interface Character {
+  id: number;
   name: string;
   status: string;
   species: string;
+  gender: string;
+  image: string;
 }
 
 interface CharacterState {
@@ -11,6 +14,8 @@ interface CharacterState {
 
 interface RootState {
   characters: CharacterState;
+  episodes: EpisodeState;
+  locations: LocationState;
 }
 
 interface Action<T> {
@@ -24,3 +29,34 @@ type AsyncAction = import('redux-thunk').ThunkAction<
   unknown,
   import('redux').AnyAction
 >;
+
+interface Episode {
+  id: number;
+  name: string;
+  air_date: string;
+  episode: string;
+}
+
+interface EpisodeState {
+  data: Episode[];
+  isFetching: boolean;
+}
+
+interface Location {
+  id: number;
+  name: string;
+  type: string;
+  dimension: string;
+}
+
+interface LocationState {
+  data: Location[];
+  isFetching: boolean;
+}
+
+interface CharacterItem {
+  name: string;
+  image: string;
+  gender: string;
+  species: string;
+}
